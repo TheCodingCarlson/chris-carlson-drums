@@ -6,5 +6,16 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-less`]
+    siteMetadata: {
+        title: 'Chris Carlson - Seattle Based Drummer',
+    },
+    plugins: [
+        `gatsby-plugin-less`,
+        {
+            resolve: `gatsby-plugin-typography`,
+            options: {
+                pathToConfigModule: `src/utils/typography`,
+            }
+        }
+    ]
 }
