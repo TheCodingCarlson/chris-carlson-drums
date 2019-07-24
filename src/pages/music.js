@@ -1,3 +1,8 @@
 import React from "react"
+import Layout from "../components/layout"
 
-export default () => <div>MUSIC!</div>
+export default () => (
+    <Layout>
+        <div>MUSIC!</div>
+    </Layout>
+)
