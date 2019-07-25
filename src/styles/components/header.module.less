@@ -1,21 +1,53 @@
 @import "../variables.less";
 
 .header {
+    background-color: @dark-grey;
+    padding: 1rem 2rem;
+}
+
+.container {
+    align-items: center;
     display: flex;
-    
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .navigation {
-    display: flex;
-    float: right;
+    display: none;
     margin: 0;
 
     li {
-        display: inline-block;
+        display: block;
         list-style-type: none;
+        margin-bottom: 0;
+
+        &:hover > a {
+            color: @white;
+        }
     }
+}
+
+.name,
+.profession {
+    margin: 0;
 }
 
 .name {
     color: @white;
+
+    &:hover {
+        color: @light-blue;
+    }
+}
+
+@media only screen and (min-width: @resolution-medium) {
+    .navigation {
+        display: initial;
+
+        li {
+            display: inline-block;
+            padding-right: 24px;
+        }
+    }
 }

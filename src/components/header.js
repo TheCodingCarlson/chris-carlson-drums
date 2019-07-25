@@ -10,19 +10,17 @@ const ListLink = props => (
 
 export default () => (
     <header className={headerStyles.header}>
-        <Link to="/">
-            <h3>
-                <span className={headerStyles.name}>Chris Carlson</span>
-                <br />
-                <span>Drummer</span>
-            </h3>
-        </Link>
-        <ul className={headerStyles.navigation}>
-            <ListLink to="/">Home</ListLink>
-            <ListLink to="/services/">Services</ListLink>
-            <ListLink to="/music/">Music</ListLink>
-            <ListLink to="/shows/">Shows</ListLink>
-            <ListLink to="/contact/">Contact</ListLink>
-        </ul>
+        <div className={headerStyles.container}>
+            <Link to="/">
+                <h3 className={headerStyles.name}>Chris Carlson</h3>
+            </Link>
+            <ul className={headerStyles.navigation}>
+                <ListLink to="/">Home</ListLink>
+                <ListLink to="/services/">Services</ListLink>
+                <ListLink to="/music/">Music</ListLink>
+                <ListLink to="/shows/">Shows</ListLink>
+                <ListLink to="/contact/">Contact</ListLink>
+            </ul>
+        </div>
     </header>
 )
