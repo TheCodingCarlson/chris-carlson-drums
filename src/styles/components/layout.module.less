@@ -1,6 +1,9 @@
-@site-width: 1200px;
+@import "../variables.less";
 
-.container {
-    margin: 3rem auto;
-    max-width: @site-width;
+@media only screen and (min-width: @resolution-medium) {
+    .container {
+        margin: 3rem auto;
+        max-width: @site-width;
+    }
+
 }

@@ -41,6 +41,25 @@
     }
 }
 
+.menu-button {
+    background-color: transparent;
+    border: 2px solid @light-blue;
+    color: @white;
+    height: 42px;
+    font-size: 24px;
+    width: 42px;
+
+    &:hover {
+        color: @dark-blue;
+        background-color: @light-blue;
+        border: 2px solid @light-blue;
+    }
+}
+
+.menu-button-active {
+    color: pink;
+}
+
 @media only screen and (min-width: @resolution-medium) {
     .navigation {
         display: initial;
@@ -49,5 +68,9 @@
             display: inline-block;
             padding-right: 24px;
         }
+    }
+
+    .menu-button {
+        display: none;
     }
 }
