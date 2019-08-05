@@ -22,14 +22,31 @@
         list-style-type: none;
         margin-bottom: 0;
 
-        &:hover > a {
+        a:hover {
             color: @white;
         }
     }
 }
 
-.name,
-.profession {
+.navigation-mobile {
+    background-color: rgba(0,0,0,0.75);
+    left: 50%;
+    list-style-type: none;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 15.5%;
+    position: absolute;
+    right: 50%;
+    text-align: center;
+    top: 76px;
+    width: 100vw;
+
+    a:hover {
+        color: @white;
+    }
+}
+
+.name {
     margin: 0;
 }
 
@@ -56,10 +73,6 @@
     }
 }
 
-.menu-button-active {
-    color: pink;
-}
-
 @media only screen and (min-width: @resolution-medium) {
     .navigation {
         display: initial;
@@ -70,7 +83,11 @@
         }
     }
 
-    .menu-button {
+    .button-container {
+        display: none;
+    }
+
+    .navigation-mobile {
         display: none;
     }
 }
