@@ -19,6 +19,8 @@
     "less": "^3.9.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-media-player": "^0.7.7",
+    "react-motion-ui-pack": "^0.10.3",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
     "typography-theme-elk-glen": "^0.16.19"
